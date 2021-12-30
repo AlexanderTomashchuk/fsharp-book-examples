@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Unit1.Lesson3", "Unit1.Lesson3\Unit1.Lesson3.fsproj", "{CEFF1276-265D-4160-86C4-69DF822904F5}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Unit2.Lesson4", "Unit2.Lesson4\Unit2.Lesson4.fsproj", "{9A0A2EA5-70D8-41B8-AC61-05F48BD9BD5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{CEFF1276-265D-4160-86C4-69DF822904F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEFF1276-265D-4160-86C4-69DF822904F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEFF1276-265D-4160-86C4-69DF822904F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0A2EA5-70D8-41B8-AC61-05F48BD9BD5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0A2EA5-70D8-41B8-AC61-05F48BD9BD5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0A2EA5-70D8-41B8-AC61-05F48BD9BD5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0A2EA5-70D8-41B8-AC61-05F48BD9BD5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
