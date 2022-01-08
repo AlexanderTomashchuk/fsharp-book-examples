@@ -3,12 +3,10 @@ module Operations
 open Domain
 
 let deposit amount account =
-  let newBalance = account.Balance + amount
-
   if amount <= 0.0M then
     account
   else
-    { account with Balance = newBalance }
+    { account with Balance = account.Balance + amount }
 
 let withdraw amount account =
   let newBalance = account.Balance - amount
