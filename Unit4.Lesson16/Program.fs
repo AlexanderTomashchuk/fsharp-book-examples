@@ -23,7 +23,7 @@ let outputDeclarative = numbers |> List.map timesTwo
 |> List.map (fun (name, age) -> ())
 
 //MAP2
-let numbers2 = [ 11 .. 20 ]
+let numbers2 = [ 11 .. 21 ]
 
 let output =
   (numbers, numbers2)
@@ -141,15 +141,14 @@ type DirInfo =
 let getDirInfo path =
   let dirInfo =
     Directory.GetDirectories(path)
-    |> List.ofArray
-    |> List.map
+    |> Array.map
          (fun iDir ->
            (iDir,
             iDir
             |> Directory.GetFiles
             |> List.ofArray
             |> List.map FileInfo))
-    |> List.map
+    |> Array.map
          (fun (iDir, fileInfos) ->
            { Name = iDir
              Size = fileInfos |> List.sumBy (fun f -> f.Length)
