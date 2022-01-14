@@ -161,3 +161,10 @@ let buildValidator (rules: Rule list) =
 let validate = buildValidator rules
 let word = "HELLO FROM F#3FFF"
 let validationResult = word |> validate
+
+//todo: HOMEWORK 
+//Create a simple rules engine over the filesystem example from the previous lesson.
+//The engine should filter out files that don’t pass certain checks, such as being over
+//a specific file size, having a certain extension, or being created before a specific
+//date. Have you ever created any rules engines before? Try rewriting them in the style
+//we defined in this lesson.
