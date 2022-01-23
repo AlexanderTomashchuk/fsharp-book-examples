@@ -44,6 +44,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Unit5.Lesson22", "Unit5.Les
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Unit5.Lesson23", "Unit5.Lesson23\Unit5.Lesson23.fsproj", "{B164D198-9653-42C1-B304-CC9C845B0DF7}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Unit5.Lesson24", "Unit5.Lesson24\Unit5.Lesson24.fsproj", "{0E6E478B-365A-4552-9212-7E6C6531A2A5}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RailwayOrientedProgramming", "RailwayOrientedProgramming\RailwayOrientedProgramming.fsproj", "{D778D919-E785-4AA7-BEE8-BFE1FD3CBDBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,5 +142,13 @@ Global
 		{B164D198-9653-42C1-B304-CC9C845B0DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B164D198-9653-42C1-B304-CC9C845B0DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B164D198-9653-42C1-B304-CC9C845B0DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6E478B-365A-4552-9212-7E6C6531A2A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6E478B-365A-4552-9212-7E6C6531A2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6E478B-365A-4552-9212-7E6C6531A2A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6E478B-365A-4552-9212-7E6C6531A2A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D778D919-E785-4AA7-BEE8-BFE1FD3CBDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D778D919-E785-4AA7-BEE8-BFE1FD3CBDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D778D919-E785-4AA7-BEE8-BFE1FD3CBDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D778D919-E785-4AA7-BEE8-BFE1FD3CBDBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
