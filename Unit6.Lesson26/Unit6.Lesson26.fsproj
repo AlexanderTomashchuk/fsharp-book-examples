@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Scratchpad.fsx" />
+    <Compile Include="Library.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Humanizer" Version="2.13.14"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Remove="Humanizer.Core.hr" />
+    <PackageReference Remove="Humanizer.Core.nb" />
+    <PackageReference Remove="Humanizer.Core.af" />
+    <PackageReference Remove="Humanizer.Core.zh-Hans" />
+    <PackageReference Remove="Humanizer.Core" />
+    <PackageReference Remove="Humanizer.Core.sr-Latn" />
+    <PackageReference Remove="Humanizer.Core.ja" />
+    <PackageReference Remove="Humanizer.Core.cs" />
+    <PackageReference Remove="Humanizer.Core.ku" />
+    <PackageReference Remove="Humanizer.Core.is" />
+    <PackageReference Remove="Humanizer.Core.el" />
+    <PackageReference Remove="Humanizer.Core.ms-MY" />
+    <PackageReference Remove="Humanizer.Core.fa" />
+    <PackageReference Remove="Humanizer.Core.ro" />
+    <PackageReference Remove="Humanizer.Core.pt" />
+    <PackageReference Remove="Humanizer.Core.zh-Hant" />
+    <PackageReference Remove="Humanizer.Core.sr" />
+    <PackageReference Remove="Humanizer.Core.ru" />
+    <PackageReference Remove="Humanizer.Core.nb-NO" />
+    <PackageReference Remove="Humanizer.Core.sl" />
+    <PackageReference Remove="Humanizer.Core.hu" />
+    <PackageReference Remove="Humanizer.Core.vi" />
+    <PackageReference Remove="Humanizer.Core.fi-FI" />
+    <PackageReference Remove="Humanizer.Core.mt" />
+    <PackageReference Remove="Humanizer.Core.hy" />
+    <PackageReference Remove="Humanizer.Core.id" />
+    <PackageReference Remove="Humanizer.Core.de" />
+    <PackageReference Remove="Humanizer.Core.tr" />
+    <PackageReference Remove="Humanizer.Core.uk" />
+    <PackageReference Remove="FSharp.DependencyManager.Paket" />
+    <PackageReference Remove="Humanizer.Core.lv" />
+    <PackageReference Remove="Humanizer.Core.sv" />
+    <PackageReference Remove="Humanizer.Core.bn-BD" />
+    <PackageReference Remove="Humanizer.Core.pl" />
+    <PackageReference Remove="Humanizer.Core.uz-Cyrl-UZ" />
+    <PackageReference Remove="AutoMapper" />
+    <PackageReference Remove="Humanizer.Core.nl" />
+    <PackageReference Remove="Humanizer.Core.it" />
+    <PackageReference Remove="Humanizer.Core.sk" />
+    <PackageReference Remove="Humanizer.Core.es" />
+    <PackageReference Remove="Humanizer.Core.ko-KR" />
+    <PackageReference Remove="Humanizer.Core.fr" />
+    <PackageReference Remove="Humanizer.Core.th-TH" />
+    <PackageReference Remove="Humanizer.Core.az" />
+    <PackageReference Remove="Humanizer.Core.da" />
+    <PackageReference Remove="Humanizer.Core.zh-CN" />
+    <PackageReference Remove="Humanizer.Core.he" />
+    <PackageReference Remove="Humanizer.Core.uz-Latn-UZ" />
+    <PackageReference Remove="Humanizer.Core.fr-BE" />
+    <PackageReference Remove="Humanizer.Core.bg" />
+    <PackageReference Remove="Humanizer.Core.ar" />
+  </ItemGroup>
+</Project>
