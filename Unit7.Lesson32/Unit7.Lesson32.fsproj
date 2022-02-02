@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+        <None Include="Scratchpad.fsx" />
+        <Content Include="ReadMe.MD" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SQLProvider" Version="1.2.10" />
+    </ItemGroup>
+
+</Project>
