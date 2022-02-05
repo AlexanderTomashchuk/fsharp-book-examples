@@ -3,6 +3,7 @@
 #r "nuget: FSharp.Data"
 #r "nuget: XPlot.GoogleCharts"
 
+open System
 open FSharp.Data
 open XPlot.GoogleCharts
 
@@ -13,8 +14,9 @@ data
 |> Seq.filter (fun row -> row.``Full Time Home Goals`` > row.``Full Time Away Goals``)
 |> Seq.countBy (fun row -> row.``Home Team``)
 |> Seq.sortByDescending snd
-|> Seq.take 10
-|> Chart.Column
+|> Seq.take 3
+|> Chart.Pie
+|> Chart.WithLegend true
 |> Chart.Show
 
 let teamsWithMostGoals =
