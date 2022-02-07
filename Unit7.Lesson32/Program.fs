@@ -1,4 +1,3 @@
-
 open FSharp.Data.Sql
 
 [<Literal>]
