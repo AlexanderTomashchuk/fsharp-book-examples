@@ -9,6 +9,7 @@
         <Compile Include="Program.fs" />
         <None Include="NuGet.fsx" />
         <Content Include="data\sample-package.html" />
+        <None Include="Homework.fsx" />
     </ItemGroup>
 
     <ItemGroup>
