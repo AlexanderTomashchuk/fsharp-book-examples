@@ -1,4 +1,4 @@
-module Unit8.Lesson37.WebApi.Domain
+module Unit8.Lesson37.Suave.Domain
 
 type Animal = {
   Name: string
