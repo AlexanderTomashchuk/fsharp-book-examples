@@ -84,6 +84,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AttachFunctionsToTypes", "A
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Currying", "Currying\Currying.fsproj", "{35AF31EC-6A5C-4774-966C-3BDA719E2190}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FunctionComposition", "FunctionComposition\FunctionComposition.fsproj", "{881622CB-F482-4654-AC30-7116821ABE58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -258,5 +260,9 @@ Global
 		{35AF31EC-6A5C-4774-966C-3BDA719E2190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35AF31EC-6A5C-4774-966C-3BDA719E2190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35AF31EC-6A5C-4774-966C-3BDA719E2190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{881622CB-F482-4654-AC30-7116821ABE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881622CB-F482-4654-AC30-7116821ABE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881622CB-F482-4654-AC30-7116821ABE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881622CB-F482-4654-AC30-7116821ABE58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
