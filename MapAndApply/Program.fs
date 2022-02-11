@@ -10,6 +10,7 @@
 
 //Examples of map
 
+open Microsoft.FSharp.Control
 open Microsoft.FSharp.Core
 
 let mapOption f opt =
@@ -146,8 +147,13 @@ let combineList x y = List.lift2 tuple x y
 
 ([ 1; 2 ], [ 100; 200 ]) ||> combineList //[(1, 100); (1, 200); (2, 100); (2, 200)]
 
-(Some 2, Some 3) ||> combineOpt |> Option.map(fun (x,y) -> x+y) //Some 5
-([ 1; 2 ], [ 100; 200 ]) ||> combineList |> List.map(fun (x,y) -> x+y) //[101; 201; 102; 202]
+(Some 2, Some 3)
+||> combineOpt
+|> Option.map (fun (x, y) -> x + y) //Some 5
+
+([ 1; 2 ], [ 100; 200 ])
+||> combineList
+|> List.map (fun (x, y) -> x + y) //[101; 201; 102; 202]
 
 //the zip function and zipList world
 //Common Names: zip, zipWith
@@ -158,29 +164,26 @@ let combineList x y = List.lift2 tuple x y
 
 // alternate "zip" implementation
 // [f;g] apply [x;y] becomes [f x; g y]
-let rec zipList fList xList  =
-    match fList,xList with
-    | [],_
-    | _,[] ->
-        // either side empty, then done
-        []
-    | (f::fTail),(x::xTail) ->
-        // new head + new tail
-        (f x) :: (zipList fTail xTail)
+let rec zipList fList xList =
+  match fList, xList with
+  | [], _
+  | _, [] ->
+    // either side empty, then done
+    []
+  | (f :: fTail), (x :: xTail) ->
+    // new head + new tail
+    (f x) :: (zipList fTail xTail)
 
 let add10 x = x + 10
 let add20 x = x + 20
 let add30 x = x + 30
 
 let result =
-    let (<*>) = zipList
-    [add10; add20; add30] <*> [1; 2; 3]
+  let (<*>) = zipList
+  [ add10; add20; add30 ] <*> [ 1; 2; 3 ]
 
 let resultAdd =
-    let (<*>) = zipList
-    [add;add] <*> [1;2] <*> [10;20]
+  let (<*>) = zipList
+  [ add; add ] <*> [ 1; 2 ] <*> [ 10; 20 ]
 // resultAdd = [11; 22]
 // [ (add 1 10); (add 2 20) ]
-
-
-
