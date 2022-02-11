@@ -92,6 +92,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bind", "Bind\Bind.fsproj", 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AsyncExtensions", "AsyncExtensions\AsyncExtensions.fsproj", "{3F295B90-9C72-4623-8B02-169B20554922}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PatternMatching", "PatternMatching\PatternMatching.fsproj", "{2D54FCA8-7572-406E-9163-ED9BE24951B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -282,5 +284,9 @@ Global
 		{3F295B90-9C72-4623-8B02-169B20554922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F295B90-9C72-4623-8B02-169B20554922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F295B90-9C72-4623-8B02-169B20554922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D54FCA8-7572-406E-9163-ED9BE24951B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D54FCA8-7572-406E-9163-ED9BE24951B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D54FCA8-7572-406E-9163-ED9BE24951B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D54FCA8-7572-406E-9163-ED9BE24951B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
