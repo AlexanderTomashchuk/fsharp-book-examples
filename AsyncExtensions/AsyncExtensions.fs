@@ -7,23 +7,25 @@ module Async =
       return! g v
     }
 
-  let (>>!) = combine
+  let (>=>!) = combine
 
-  //todo: test it
   let ret x = async { return x }
 
-  //todo: test it
   let map f x =
     async {
       let! v = x
       return f v
     }
 
-  let mapAndUnwrap f x =
+  //https://stackoverflow.com/questions/30416774/when-calling-an-f-async-workflow-can-i-avoid-defining-a-temporary-label
+  //leave a comment
+  let bind f x =
     async {
       let! v = x
       return! f v
     }
+  
+  let (>>=!) x f = bind f x
 
 open Async
 
@@ -44,21 +46,21 @@ let multipleAsync x y =
 
 
 //test of >>!
-let add1ThenDoubleAsync = add1Async >>! doubleAsync
+let add1ThenDoubleAsync = add1Async >=>! doubleAsync
 
 add1ThenDoubleAsync 5
 |> Async.RunSynchronously
 |> printfn "%d"
 
-let add5ThenMultiplyBy10Async = addAsync 5 >>! multipleAsync 10
+let add5ThenMultiplyBy10Async = addAsync 5 >=>! multipleAsync 10
 
 add5ThenMultiplyBy10Async 3
 |> Async.RunSynchronously
 |> printfn "%d"
 
-//test of mapAndUnwrap
+//test of bind
 let asyncResult1 =
-  5 |> add1Async |> Async.mapAndUnwrap doubleAsync
+  5 |> add1Async |> Async.bind doubleAsync
 
 asyncResult1
 |> Async.RunSynchronously
@@ -67,8 +69,23 @@ asyncResult1
 let asyncResult2 =
   5
   |> addAsync 4
-  |> Async.mapAndUnwrap (multipleAsync 10)
+  |> Async.bind (multipleAsync 10)
 
 asyncResult2
+|> Async.RunSynchronously
+|> printfn "%d"
+
+//test of bind using operator >>=!
+open Async
+
+let asyncResult3 = 5 |> add1Async >>=! doubleAsync
+
+asyncResult3
+|> Async.RunSynchronously
+|> printfn "%d"
+
+let asyncResult4 = 5 |> addAsync 4 >>=! multipleAsync 10
+
+asyncResult4
 |> Async.RunSynchronously
 |> printfn "%d"
